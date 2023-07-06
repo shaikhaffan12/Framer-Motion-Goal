@@ -1,0 +1,28 @@
+
+.title-text{
+    border: 1px solid black;
+    position: relative;
+    right: 15%;
+    width: 50%;
+    float: right;
+    margin-top: 10rem;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 20px;
+}
+
+.name-text{
+    font-family: 'Charm', cursive;
+    font-size: 5rem;
+}
+
+.hello-text{
+    font-size: 1.2rem;
+}
+
+.logo{
+    /* border: 1px solid #000; */
+    width: fit-content;
+    position: relative;
+    right: -5%;
+    margin-top: 13px;
+}

@@ -1,0 +1,12 @@
+.box{
+    height: 20rem;
+    width: 40rem;
+    position: relative;
+    float: right;
+    right: 14%;
+    margin-top: 7rem;
+}
+
+.paragraph{
+    font-family: 'IBM Plex Mono', monospace;
+}
