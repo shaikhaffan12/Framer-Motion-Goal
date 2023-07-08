@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { motion } from 'framer-motion';
 import { AiOutlineEdit, AiOutlineHome } from 'react-icons/ai';
 import { TbPointer, TbSend } from 'react-icons/tb';
-import { BsPerson, BsInstagram } from 'react-icons/bs';
+import { BsPerson, BsInstagram, BsLightbulb } from 'react-icons/bs';
 import { RxLayers, RxDividerVertical } from 'react-icons/rx';
 import { FiTwitter } from 'react-icons/fi';
 import './Navbar.css';
@@ -117,7 +117,7 @@ export default function Navbar() {
         <OverlayTrigger
           placement="top"
           delay={{ show: 250, hide: 400 }}
-          overlay={<Tooltip>Stack</Tooltip>}
+          overlay={<Tooltip>Skills</Tooltip>}
         >
           <motion.div className='icons'
             whileHover={{ backgroundColor: "#B9BBB6", borderRadius: "50%", scale: "1.1" }}
@@ -127,7 +127,7 @@ export default function Navbar() {
             <IconContext.Provider
               value={{ color: '#000', size: '22px' }}
             >
-              <RxLayers />
+              <BsLightbulb />
             </IconContext.Provider>
 
           </motion.div>

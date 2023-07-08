@@ -1,0 +1,94 @@
+
+.main-container1{
+    height: 90vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    gap: 14px; 
+    margin-top: 40px;/* Gap between grid items */
+
+  }
+
+.boxes{
+    /* border: 1px solid #000; */
+    height: 14rem;
+    display: grid;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.left{
+    /* border: 1px solid #000; */
+    width: 60%;
+    height: 85vh;
+    float: left;
+    margin-left: 4%;
+}
+
+.right{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 85vh;
+    float: right;
+}
+
+.texts1{
+    text-align: center;
+    height: fit-content;
+    font-size: 1.4rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.texts2{
+    text-align: center;
+    height: fit-content;
+    font-size: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.bottom-left{
+    /* border: 1px solid #000; */
+    width: 50%;
+    height: 85vh;
+    float: left;
+    margin-left: 4%;
+}
+
+.bottom-right{
+    /* border: 1px solid #000; */
+    width: 45%;
+    height: 85vh;
+    float: right;
+}
+
+.boxes1{
+    border: 1px solid #000;
+    height: 14rem;
+    width: 250px;
+    display: grid;
+    margin-bottom: 10px;
+    /* background-color: #f2f2f2; */
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.texts3{
+    text-align: center;
+    height: fit-content;
+    font-size: 2.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.texts4{
+    text-align: center;
+    height: fit-content;
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 30px;
+}

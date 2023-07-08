@@ -160,7 +160,7 @@ export default function Home() {
       </motion.div>
     
       <motion.img
-        style={{ height: "600px", width: '480px', float: "left", marginRight: "25px", paddingTop: "20px" }}
+        style={{ height: "580px", width: '450px', float: "left", marginRight: "25px", paddingTop: "10px" }}
         src='https://toluwalope.tech/assets/images/peep-8.svg'
         variants={imageVariants}
         initial="initial"
