@@ -2,9 +2,8 @@ import { React, useState } from 'react';
 import { motion } from 'framer-motion';
 import { AiOutlineEdit, AiOutlineHome } from 'react-icons/ai';
 import { TbPointer, TbSend } from 'react-icons/tb';
-import { BsPerson, BsInstagram, BsLightbulb } from 'react-icons/bs';
-import { RxLayers, RxDividerVertical } from 'react-icons/rx';
-import { FiTwitter } from 'react-icons/fi';
+import { BsPerson, BsInstagram, BsLightbulb, BsLinkedin } from 'react-icons/bs';
+import {  RxDividerVertical } from 'react-icons/rx';
 import './Navbar.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -13,7 +12,18 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
 
-  // const [clicked, setClicked] = useState();
+  const handleLogoClick = (type) => {
+    let url;
+    if (type === 'instagram') {
+      url = 'https://www.instagram.com/shaikhaffan._/';
+    } else if (type === 'linkedin') {
+      url = 'https://www.linkedin.com/in/affan-shaikh-197b311ba/';
+    }
+
+    if (url) {
+      window.open(url, '_blank');
+    }
+  };
 
   const navBarVariants = {
     initial: { y: 100 },
@@ -166,16 +176,16 @@ export default function Navbar() {
         <OverlayTrigger
           placement="top"
           delay={{ show: 250, hide: 400 }}
-          overlay={<Tooltip>Twitter</Tooltip>}
+          overlay={<Tooltip>Linkedin</Tooltip>}
         >
           <motion.div className='icons'
             whileHover={{ backgroundColor: "#B9BBB6", borderRadius: "50%", scale: "1.1" }}
             transition={{ duration: 0.5 }}
           >
             <IconContext.Provider
-              value={{ color: '#03a4ec', size: '22px' }}
+              value={{ color: '#0077b0', size: '22px' }}
             >
-              <FiTwitter />
+              <BsLinkedin  onClick={()=>handleLogoClick("linkedin")}/>
             </IconContext.Provider>
 
           </motion.div>
@@ -193,7 +203,7 @@ export default function Navbar() {
             <IconContext.Provider
               value={{ color: '#ca2357', size: '22px' }}
             >
-              <BsInstagram />
+              <BsInstagram onClick={()=>handleLogoClick("instagram")}/>
             </IconContext.Provider>
 
           </motion.div>
