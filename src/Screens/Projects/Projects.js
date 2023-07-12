@@ -34,23 +34,6 @@ export default function Projects() {
 
   return (
     <div>
-      <div style={{position: "relative", top:50, float: "right", right:80}}>
-
-        <motion.span onClick={()=> navigate("/")}
-        style={{cursor:"pointer"}}
-        whileHover={{color:"#1890ff"}}
-        >
-          Home
-        </motion.span>
-
-        <TbMathGreater />
-
-        <motion.span
-        whileHover={{color:"red"}}
-        >
-          Project
-        </motion.span>
-      </div>
       <Logo />
       <motion.div className='projects-top'>
       
@@ -82,9 +65,6 @@ export default function Projects() {
           <motion.div>
             <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg' className='image-popup'/>
           </motion.div>
-          {/* <h2>Pop-up Content</h2>
-          <p>This is the content of the pop-up.</p> */}
-          
           
         </motion.div>
         )}
